@@ -39,6 +39,15 @@ Hasil dati berbagai fase gambar asli wajah, pasangan gambar asli wajah, deteksi 
 
 ### Hasil akurasi
 
-![Contoh Gambar](hasil/table_canny.png "Ini adalah contoh gambar")
+| Image     | Accuracy | SSIM   |
+|-----------|----------|--------|
+| wajah 1   | 96.15%   | 52%    |
+| wajah 10  | 93.07%   | 34%    |
+| wajah 2   | 90.61%   | 26%    |
+| wajah 6   | 95.06%   | 42%    |
+| wajah 7   | 95.47%   | 45%    |
+| wajah 8   | 94.24%   | 40%    |
+| wajah 9   | 91.68%   | 28%    |
+| Rata-rata | 93.75%   | 38.01% |
 
 Hasil yang ditemukan dengan menggunakan metode canny edge detection menghasilkan 7 gambar wajah asli. Tingkat keberhasilan rata-rata adalah 93.75%.
