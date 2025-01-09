@@ -1,4 +1,4 @@
-# Pengolahan-Citra-UAS
+# Pengolahan-Citra-Digital
 
 ## Sobel Edge Detection
 ### Proses Deteksi Tepi
