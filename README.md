@@ -16,3 +16,29 @@ Sebelum mendeteksi tepi pada gambar target, dilakukan beberapa proses pendahulua
 ### C. Analisis Hasil Eksperimen
 Untuk menunjukkan efek deteksi tepi dari algoritma di bawah gambar yang berbeda, dibawah ini membandingkan algoritma dengan algoritma Sobel tradisional dengan threshold yang berbeda pengaturan operator Sobel tradisional dan ambang batas adaptif setiap gambar ditunjukkan pada Gambahar dibawah ini.
 ![Contoh Gambar](hasil/Edge_Detection_Different_Threshold.jpg "Ini adalah contoh gambar")
+
+## Canny Edge Detection
+###
+Hasil dati berbagai fase gambar asli wajah, pasangan gambar asli wajah, deteksi tepi canny, segmentasi gambar dan hasil akurasi gambar.
+
+### Segmentasi gambar
+
+![Contoh Gambar](hasil/wajah1.png "Ini adalah contoh gambar")
+
+![Contoh Gambar](hasil/wajah10.png "Ini adalah contoh gambar")
+
+![Contoh Gambar](hasil/wajah2.png "Ini adalah contoh gambar")
+
+![Contoh Gambar](hasil/wajah6.png "Ini adalah contoh gambar")
+
+![Contoh Gambar](hasil/wajah7.png "Ini adalah contoh gambar")
+
+![Contoh Gambar](hasil/wajah8.png "Ini adalah contoh gambar")
+
+![Contoh Gambar](hasil/wajah9.png "Ini adalah contoh gambar")
+
+### Hasil akurasi
+
+![Contoh Gambar](hasil/table_canny.png "Ini adalah contoh gambar")
+
+Hasil yang ditemukan dengan menggunakan metode canny edge detection menghasilkan 7 gambar wajah asli. Tingkat keberhasilan rata-rata adalah 93.75%.
