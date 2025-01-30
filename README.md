@@ -19,24 +19,31 @@ Penelitian ini menggunakan kerangka penelitian untuk pengenalan pola wajah denga
 ### 2.1 pengumpulan Dataset
 Penelitian ini menggunakan 10 gambar face recognition dataset dari Kaggle, Dataset dapat diakses melalui website [9]. Dataset yang berfungsi untuk mendeteksi tepi pengenalan wajah. Tabel 1 menunjukkan contoh citra yang digunakan.
 
-### 2.2	Citra Grayscale
-Grayscale adalah teknik untuk mengatur kecerahan dan kontras gambar dengan memodifikasi gambar grayscale asli menggunakan algoritma atau perangkat lunak pengolahan gambar  [10].
+| No | Nama           | Gambar                                                       |
+|----|----------------|--------------------------------------------------------------|
+| 1  | Henry Cavill   | ![Henry Cavill](../Dataset/Henry Cavill_3.jpg)               |
+| 2  | Brad Pitt      | ![Brad Pitt](../Dataset/Brad Pitt_16.jpg)                    |
+| 3  | Robert DowneyJr| ![Robert DowneyJr](../Dataset/Robert Downey Jr_3.jpg)        |
+### 2.2 Citra Grayscale
+Grayscale adalah teknik untuk mengatur kecerahan dan kontras gambar dengan memodifikasi gambar grayscale asli menggunakan algoritma atau perangkat lunak pengolahan gambar [10].
 
-### 2.3	Edge Detection
-Deteksi tepi (edge detection) adalah proses untuk menemukan batas antara dua wilayah citra yang memiliki perbedaan tingkat kecerahan. Proses ini bertujuan untuk mengidentifikasi garis tepi objek dalam citra, yang membantu menyoroti detail penting, terutama pada citra yang buram akibat kesalahan atau efek akuisisi [12].
+### 2.3 Edge Detection
+Deteksi tepi (edge detection) adalah proses untuk menemukan batas antara dua wilayah citra yang memiliki perbedaan tingkat kecerahan [12].
 
-#### A Sobel
-Operator Sobel adalah salah satu algoritma deteksi tepi yang menggabungkan pemfilteran Gaussian dan diferensiasi untuk menghitung nilai gradien dari fungsi kecerahan gambar. Metode utamanya adalah dengan menghitung selisih berbobot antara nilai keabuan piksel target dengan nilai dari area di sekitarnya, yaitu atas, bawah, kiri, dan kanan, kemudian melakukan proses penghalusan gambar. Semakin besar bobot yang diberikan pada piksel yang dekat dengan target, semakin besar pengaruhnya dalam proses konvolusi [13]. Langkah-langkah yang dilakukan oleh operator Sobel untuk menentukan tepi dalam gambar adalah sebagai berikut:
-1) Konvolusi gambar skala abu-abu dengan kernel Sobel horizontal dan vertikal
-2)	Hitung ukuran gradien menggunakan rumus
-3)	Gambar yang dicetak merupakan hasil gradasi besar (G)
+#### A. Sobel
+Operator Sobel adalah salah satu algoritma deteksi tepi yang menggabungkan pemfilteran Gaussian dan diferensiasi untuk menghitung nilai gradien dari fungsi kecerahan gambar [13]. Langkah-langkahnya adalah:
+1. Konvolusi gambar skala abu-abu dengan kernel Sobel horizontal dan vertikal.
+2. Hitung ukuran gradien menggunakan rumus:
+   \[
+   G = \sqrt{S_x^2 + S_y^2}
+   \]
+3. Gambar yang dicetak merupakan hasil gradien besar (G).
 
-#### B Canny
-
-Algoritma Canny adalah metode deteksi tepi yang menggunakan operasi konvolusi dengan filter Gaussian untuk mengurangi noise dalam gambar. Tujuan utama dari algoritma ini adalah meningkatkan akurasi deteksi tepi dengan memaksimalkan rasio sinyal terhadap noise dan memastikan bahwa tepi yang terdeteksi sesuai dengan tepi asli. Proses yang dilakukan oleh operator Canny [6], yaitu:
-1) Menghaluskan gambar untuk mengurangi noise, Pemulusan citra dilakukan dengan menerapkan persamaan berikut.
-2) proses untuk menentukan resistansi tepi. Tepi harus ditandai pada gambar dengan gradien besar. Operator gradien digunakan dan pencarian dilakukan secara horizontal dan vertikal
-3) Menghitung gradien untuk menemukan perubahan intensitas piksel yang signifikan
+#### B. Canny
+Algoritma Canny adalah metode deteksi tepi yang menggunakan operasi konvolusi dengan filter Gaussian untuk mengurangi noise dalam gambar [6]. Langkah-langkahnya adalah:
+1. Menghaluskan gambar untuk mengurangi noise.
+2. Menentukan resistansi tepi dengan operator gradien.
+3. Menghitung gradien untuk menemukan perubahan intensitas piksel yang signifikan.
 
 ### 2.4	Pengukuran akurasi
 
@@ -45,6 +52,7 @@ Memberikan informasi tentang tingkat kesamaan antara dua gambar yang sesuai dala
 ### 2.5	Analisis Perbandingan
 
 Pada tahap analisis hasil ini dilakukan perbandingan antara hasil deteksi tepi menggunakan algoritma Canny Edge Detection dengan hasil deteksi tepi menggunakan algoritma Sobel. Berdasarkan nilai akurasi.
+
 
 ## Hasil dan Pembahasan
 
