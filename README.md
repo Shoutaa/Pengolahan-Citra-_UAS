@@ -48,8 +48,8 @@ Deteksi tepi (edge detection) adalah proses untuk menemukan batas antara dua wil
 Operator Sobel adalah salah satu algoritma deteksi tepi yang menggabungkan pemfilteran Gaussian dan diferensiasi untuk menghitung nilai gradien dari fungsi kecerahan gambar [13]. Langkah-langkahnya adalah:
 1. Konvolusi gambar skala abu-abu dengan kernel Sobel horizontal dan vertikal.
 2. Hitung ukuran gradien menggunakan rumus:
-  ```md
-$ G = \sqrt{S_x^2 + S_y^2} $
+G = √(S<sub>x</sub><sup>2</sup> + S<sub>y</sub><sup>2</sup>)
+
 3. Gambar yang dicetak merupakan hasil gradien besar (G).
 
 #### B. Canny
