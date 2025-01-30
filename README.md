@@ -35,9 +35,9 @@ Penelitian ini menggunakan 10 gambar face recognition dataset dari Kaggle, Datas
 
 | No | Nama           | Gambar                                                       |
 |----|----------------|--------------------------------------------------------------|
-| 1  | Henry Cavill   | ![Henry Cavill](../Dataset/Henry Cavill_3.jpg)               |
-| 2  | Brad Pitt      | ![Brad Pitt](../Dataset/Brad Pitt_16.jpg)                    |
-| 3  | Robert DowneyJr| ![Robert DowneyJr](../Dataset/Robert Downey Jr_3.jpg)        |
+| 1  | Henry Cavill   | ![Henry Cavill](../Dataset/REFERENSI/Henry Cavill_3.jpg)               |
+| 2  | Brad Pitt      | ![Brad Pitt](../Dataset/REFERENSI/Brad Pitt_16.jpg)                    |
+| 3  | Robert DowneyJr| ![Robert DowneyJr](../Dataset/REFERENSI/Robert Downey Jr_3.jpg)        |
 ### 2.2 Citra Grayscale
 Grayscale adalah teknik untuk mengatur kecerahan dan kontras gambar dengan memodifikasi gambar grayscale asli menggunakan algoritma atau perangkat lunak pengolahan gambar [10].
 
