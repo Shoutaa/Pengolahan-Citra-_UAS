@@ -75,10 +75,10 @@ Berikut adalah contoh hasil citra asli yang telah diubah ke dalam citra grayscal
 
 ### 3.2 Deteksi Tepi Citra
 #### A. Hasil Deteksi Tepi dengan Algoritma Sobel
-![Sobel Edge Detection]((Dataset/REFERENSI/hasilsobel.png)
+![Sobel Edge Detection](Dataset/REFERENSI/hasilsobel.png)
 
 #### B. Hasil Deteksi Tepi dengan Algoritma Canny
-![Canny Edge Detection]((Dataset/REFERENSI/hasilcanny.png)
+![Canny Edge Detection](Dataset/REFERENSI/hasilcanny.png)
 
 ### 3.3 Hasil Pengukuran Akurasi
 | No | Nama               | Akurasi Sobel | Akurasi Canny |
