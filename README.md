@@ -1,20 +1,34 @@
-# Analisis efektivitas metode canny dan sobel edge detection untuk face recognition
+# Analisis Efektivitas Metode Canny dan Sobel Edge Detection untuk Face Recognition
 
-Dhika Restu Fauzi `2206046`
-<br> Muhamad Hamzah `2206081`
-<br> 
+**Disusun Oleh:**
+- Dhika Restu Fauzi (`2206046`)
+- Muhamad Hamzah (`2206081`)
+
+**Kelas A - Program Studi Teknik Informatika**  
+**Institut Teknologi Garut**  
+**2024**
 
 ## 1. Pendahuluan
+### 1.1 Latar Belakang
 Pengolahan gambar adalah bidang ilmu yang bertujuan untuk menganalisis, memanipulasi, dan mengekstrak informasi dari gambar digital [1](https//example.com). Proses deteksi otomatis dengan kecerdasan buatan bermanfaat dalam berbagai bidang, seperti deteksi plat nomor kendaraan untuk identifikasi pelanggaran dan face detection [2]. Manusia memiliki bentuk wajah yang berbeda-beda, yang berperan sebagai salah satu ciri khas atau identitas unik setiap individu [3]. Seiring dengan berkembangnya zaman, kebutuhan akan sistem cerdas yang dapat mengidentifikasi wajah semakin penting, terutama di bidang keamanan rumah untuk mengenali pencuri atau orang tak dikenal menggunakan kamera CCTV.
 
 Dalam penelitian ini [4], metode Canny digunakan untuk mendeteksi tepi wajah, diikuti oleh pengenalan pola wajah. Dari 40 gambar wajah yang diuji, metode ini menunjukkan persentase keberhasilan sebesar 80%. Berdasarkan hasil perhitungan pada penelitian ini [5] terhadap 10 sampel, nilai MSE pada deteksi tepi Canny dengan penambahan kontras (koefisien 5, 7.5, dan 10) menunjukkan perbedaan tipis, dengan nilai terbesar mencapai 3428.28 (koefisien 10) dan terkecil 1145.38 (koefisien 5). Pada penelitian ini [6], hasil pengujian menunjukkan bahwa Canny memiliki nilai Mean Squared Error (MSE) sebesar 3542,02 dan Peak Signal-to-Noise Ratio (PSNR) sebesar 12,92 . Dalam penelitian ini [7], metode Sobel untuk deteksi tepi wajah menunjukkan akurasi sebesar 76.4% dalam mendeteksi bentuk wajah dan 80.8% dalam ketajaman tepi gambar. Penelitian lainnya [8], menggunakan metode Canny untuk mendeteksi tepi pada citra dengan 10 wajah, dengan hasil rata-rata akurasi sebesar 89,46%. 
 
-xxxx
-xxxx
+### 1.2 Penelitian Terkait
+Beberapa penelitian terkait telah dilakukan dalam bidang deteksi tepi dan pengenalan wajah:
+- **Metode Canny**: Digunakan untuk mendeteksi tepi wajah dengan persentase keberhasilan sebesar 80% pada 40 gambar wajah [4].
+- **Metode Sobel**: Menunjukkan akurasi sebesar 76.4% dalam mendeteksi bentuk wajah dan 80.8% dalam ketajaman tepi gambar [7].
+- **Perbandingan MSE dan PSNR**: Canny memiliki nilai MSE sebesar 3542,02 dan PSNR sebesar 12,92 [6].
+### 1.3 Tujuan
+Penelitian ini bertujuan untuk:
+1. Membandingkan efektivitas metode Canny dan Sobel dalam deteksi tepi wajah.
+2. Mengukur akurasi kedua metode menggunakan metrik berbasis kesamaan piksel.
+3. Memberikan rekomendasi untuk optimasi parameter algoritma.
 
 ## 2. Metode Penelitian
 Penelitian ini menggunakan kerangka penelitian untuk pengenalan pola wajah dengan menggunakan edge detection dan menentukan akurasi pencocokan pola wajah asli dengan pasangan pola wajah yang ditentukan. Gambar 1 menunjukkan kerangka kerja penelitian ini:
-[gambar]
+![Kerangka Penelitian](penelitian.jpg)
+
 
 ### 2.1 pengumpulan Dataset
 Penelitian ini menggunakan 10 gambar face recognition dataset dari Kaggle, Dataset dapat diakses melalui website [9]. Dataset yang berfungsi untuk mendeteksi tepi pengenalan wajah. Tabel 1 menunjukkan contoh citra yang digunakan.
@@ -53,12 +67,37 @@ Memberikan informasi tentang tingkat kesamaan antara dua gambar yang sesuai dala
 
 Pada tahap analisis hasil ini dilakukan perbandingan antara hasil deteksi tepi menggunakan algoritma Canny Edge Detection dengan hasil deteksi tepi menggunakan algoritma Sobel. Berdasarkan nilai akurasi.
 
+## 3. Hasil dan Pembahasan
 
-## Hasil dan Pembahasan
+### 3.1 Hasil Grayscale
+Berikut adalah contoh hasil citra asli yang telah diubah ke dalam citra grayscale:
+
+![Grayscale Image](grayscale.jpg)
+
+### 3.2 Deteksi Tepi Citra
+#### A. Hasil Deteksi Tepi dengan Algoritma Sobel
+![Sobel Edge Detection](../hasil/Edge_Detection_Different_Threshold.jpg)
+
+#### B. Hasil Deteksi Tepi dengan Algoritma Canny
+![Canny Edge Detection](canny.jpg)
+
+### 3.3 Hasil Pengukuran Akurasi
+| No | Nama               | Akurasi Sobel | Akurasi Canny |
+|----|--------------------|---------------|---------------|
+| 1  | Henry Cavill       | 82.62%        | 92.92%        |
+| 2  | Brad Pitt          | 100%          | 100%          |
+| 3  | Robert Downey Jr   | 82.28%        | 92.05%        |
 
 
-## Kesimpulan
+## 4. Kesimpulan
 
+### 4.1 Ringkasan Temuan
+Berdasarkan penelitian ini, metode Canny Edge Detection menunjukkan performa yang lebih baik dalam pengenalan wajah dibandingkan metode Sobel, dengan rata-rata akurasi sebesar 97.45%.
+
+### 4.2 Batasan Pekerjaan
+1. Ukuran dataset yang terbatas (hanya 10 citra).
+2. Variasi kondisi citra yang tidak diuji (pencahayaan buruk, noise tinggi).
+3. Parameter algoritma yang belum dioptimalkan.
 
 ## Referensi  
 
