@@ -6,7 +6,7 @@
 
 **Kelas A - Program Studi Teknik Informatika**  
 **Institut Teknologi Garut**  
-**2024**
+**2025**
 
 ## 1. Pendahuluan
 ### 1.1 Latar Belakang
@@ -71,14 +71,14 @@ Pada tahap analisis hasil ini dilakukan perbandingan antara hasil deteksi tepi m
 ### 3.1 Hasil Grayscale
 Berikut adalah contoh hasil citra asli yang telah diubah ke dalam citra grayscale:
 
-![Grayscale Image](grayscale.jpg)
+![Grayscale Image](Dataset/REFERENSI/gray.png)  
 
 ### 3.2 Deteksi Tepi Citra
 #### A. Hasil Deteksi Tepi dengan Algoritma Sobel
-![Sobel Edge Detection](../hasil/Edge_Detection_Different_Threshold.jpg)
+![Sobel Edge Detection]((Dataset/REFERENSI/hasilsobel.png)
 
 #### B. Hasil Deteksi Tepi dengan Algoritma Canny
-![Canny Edge Detection](canny.jpg)
+![Canny Edge Detection]((Dataset/REFERENSI/hasilcanny.png)
 
 ### 3.3 Hasil Pengukuran Akurasi
 | No | Nama               | Akurasi Sobel | Akurasi Canny |
