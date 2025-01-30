@@ -27,7 +27,7 @@ Penelitian ini bertujuan untuk:
 
 ## 2. Metode Penelitian
 Penelitian ini menggunakan kerangka penelitian untuk pengenalan pola wajah dengan menggunakan edge detection dan menentukan akurasi pencocokan pola wajah asli dengan pasangan pola wajah yang ditentukan. Gambar 1 menunjukkan kerangka kerja penelitian ini:
-![Kerangka Penelitian](jurnal/penelitian.jpg)
+![Kerangka Penelitian](jurnal/penelitian%20.jpg)
 
 
 ### 2.1 pengumpulan Dataset
